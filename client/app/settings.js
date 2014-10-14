@@ -1,6 +1,6 @@
 
 module.exports = {
   apiURL: "/api",
-  productsImgs: "/images/products/",
+  productsImgs: "http://assets.citagro.com.ar/products/",
   maxProductsShow: 5
 };
