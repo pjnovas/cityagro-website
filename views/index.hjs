@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='/css/app.css?v={{version}}' />
+    <!--<script src="//localhost:35729/livereload.js"></script>-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="section section-top">
+        <img class="logo" src="/images/logo.png">
+        <div class="content">
+          <p>Somos una empresa joven, que distribuye productos y provee servicios para el Profesional en el Manejo de Plagas</p>
+          <div class="dude">
+            <img src="/images/dude.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-prods">
+        <div class="content">
+          <div class="prod-ico"></div>
+          <h2>PRODUCTOS</h2>
+          <input id="search" type="text" placeholder="Buscar">
+          <ul class="products"></ul>
+        </div>
+      </div>
+
+      <div class="section section-brands">
+        <div class="content">
+          <img src="/images/brand.png">
+        </div>
+      </div>
+
+      <div class="section section-footer">
+        <div class="content">
+          <div>
+            <span>Av. Alicia Moreau de Justo</span>
+            <span>740, Piso 3 Ofic.1, </span>
+            <span>Puerto Madero Dock 5</span>
+          </div>
+          <div>
+            <span>(C1107AAP) Ciudad Autónoma</span>
+            <span>de Buenos Aires, Argentina</span>
+          </div>
+          <div class="bar-separator">
+            <span><b>Tel</b> +54 11 5235 3950</span>
+            <span><b>Fax</b> +54 11 5199 0691</span>
+            <span>info@cityagro.com.ar</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='/js/vendor.js?v={{version}}'></script>
+    <script src='/js/app.js?v={{version}}'></script>
+
+  </body>
+</html>
