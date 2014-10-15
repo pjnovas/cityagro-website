@@ -7,15 +7,14 @@ module.exports.register = function(router, _config) {
 };
 
 var getList = function(req, res, next){
-  Product.find()
-    .select("-__v -created -usd -ars -_id")
+  Product.find({ isPublic: true })
+    .select("-__v -created -usd -ars -_id -isPublic")
     .sort({ name: 'asc' })
     .exec(function(err, products) {
       if(err) return res.send(500);
       req.products = products || [];
       next();
     });
-
 };
 
 var sendList = function(req, res){

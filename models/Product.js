@@ -16,6 +16,8 @@ module.exports = function(config) {
     , "usd": { type: Number, default: 0 }
     , "ars": { type: Number, default: 0 }
 
+    , "isPublic": { type: Boolean, default: true }
+    
     , "created": { type: Date, default: Date.now }
   });
 

@@ -19,6 +19,8 @@ module.exports = function(uri){
     expect(prod.imageURL).to.be.equal(def.imageURL);
     expect(prod.link).to.be.equal(def.link);
 
+    expect(prod.hasOwnProperty("isPublic")).to.be.equal(false);
+
     expect(prod.usd).to.not.be.ok();
     expect(prod.ars).to.not.be.ok();
     expect(prod.__v).to.not.be.ok();
@@ -80,6 +82,14 @@ function createProducts(done){
     name: "3M - Máscara de cara completa serie 6000",
     ars: 300,
     usd: 400
+  },{
+    description: "Dummy NOT PUBLIC.",
+    imageURL: "dummy.jpg",
+    link: "",
+    name: "Dummy Title",
+    ars: 300,
+    usd: 400,
+    isPublic: false
   }];
 
   Product.create(prods, done);
