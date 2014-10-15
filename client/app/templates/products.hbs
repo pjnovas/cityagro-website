@@ -4,7 +4,13 @@
     <img src="{{productImage imageURL}}">
   </div>
   <div class="right">
-    <h4>{{name}}</h4>
+    <h4>{{name}}
+      {{#if link}}
+      <a class="btn-info" href="{{link}}" target="_blank">
+        <i class="ca-icon ca-icon-info"></i>
+      </a>
+      {{/if}}
+    </h4>
     <p>{{description}}</p>
   </div>
   <p class="desc">{{description}}</p>

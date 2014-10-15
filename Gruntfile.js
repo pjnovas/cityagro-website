@@ -124,7 +124,10 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= paths.dist.root %><%= paths.dist.appName %>':
-            '<%= paths.dist.root %><%= paths.dist.appName %>'
+            '<%= paths.dist.root %><%= paths.dist.appName %>',
+
+          '<%= paths.dist.root %><%= paths.dist.vendorName %>':
+            '<%= paths.dist.root %><%= paths.dist.vendorName %>',
         }
       }
     },

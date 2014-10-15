@@ -8,6 +8,7 @@ module.exports = function(){
 
   var container = $("ul.products");
   var search = $("input#search");
+  var searchBtn = $("a#btn-search");
   var allProducts = [];
   var searchProducts = [];
 
@@ -20,8 +21,7 @@ module.exports = function(){
     bindProducts();
   });
 
-  search.on("keyup", function(){
-
+  function doSearch(){
     var keyword = $.trim(search.val());
 
     if (keyword.length === 0){
@@ -36,7 +36,10 @@ module.exports = function(){
     }
 
     bindProducts();
-  });
+  }
+
+  search.on("keyup", doSearch);
+  searchBtn.on("click", doSearch);
 
   function bindProducts(){
     container.html(tmpl({ items: searchProducts }));
@@ -45,6 +48,10 @@ module.exports = function(){
 };
 
 function getNormal(text){
+  if (!text){
+    return "";
+  }
+
   text = text.replace(/Á/g,"A");
   text = text.replace(/á/g,"a");
   text = text.replace(/É/g,"E");
