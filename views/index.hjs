@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>CityAgro: Domisanitarios para la Ciudad</title>
+    <meta name="description" content="Distribución y venta de domisanitarios para el Profesional en el Manejo de Plagas Urbanas.">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
     <meta name="viewport" content="width=device-width" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/css/app.css?v={{version}}' />
-    <script src="//localhost:35729/livereload.js"></script>
+    <!--<script src="//localhost:35729/livereload.js"></script>-->
   </head>
   <body>
 
@@ -64,6 +69,18 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src='/js/vendor.js?v={{version}}'></script>
     <script src='/js/app.js?v={{version}}'></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10972779-2']);
+      _gaq.push(['_setDomainName', 'cityagro.com.ar']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
   </body>
 </html>
