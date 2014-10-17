@@ -196,12 +196,8 @@ module.exports = function(grunt) {
             ,_: true
             ,require: true
             ,module: true
-            ,Backbone: true
             ,Handlebars: true
-            ,console: true
-            ,moment: true
-            ,Printer: true
-            ,literalNumbers: true
+            ,smoothScroll:true
             ,cityagro: true
           }
         }

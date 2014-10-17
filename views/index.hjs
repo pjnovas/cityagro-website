@@ -25,10 +25,10 @@
         </div>
       </div>
 
-      <div class="section section-prods">
+      <div id="sec-products" class="section section-prods">
         <div class="content">
           <div class="prod-ico"></div>
-          <h2>PRODUCTOS</h2>
+          <h2><a data-scroll href="#sec-products">PRODUCTOS</a></h2>
           <div class="searchbox">
             <input id="search" type="text" placeholder="Buscar">
             <a id="btn-search" class="btn-search">

@@ -10,4 +10,9 @@ module.exports = function(){
  
   require("./products")();
 
+  smoothScroll.init({
+    speed: 1000,
+    easing: 'easeInOut'
+  });
+
 };
