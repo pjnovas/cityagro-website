@@ -14,6 +14,7 @@ module.exports = function(uri){
   uri = uri + '/products';
 
   function CheckProduct(prod, def){
+    expect(prod._id).to.be.ok();
     expect(prod.name).to.be.equal(def.name);
     expect(prod.description).to.be.equal(def.description);
     expect(prod.imageURL).to.be.equal(def.imageURL);
@@ -24,7 +25,6 @@ module.exports = function(uri){
     expect(prod.usd).to.not.be.ok();
     expect(prod.ars).to.not.be.ok();
     expect(prod.__v).to.not.be.ok();
-    expect(prod._id).to.not.be.ok();
   }
 
   describe('/products', function(){

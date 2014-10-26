@@ -11,13 +11,27 @@ module.exports = function(){
   var searchBtn = $("a#btn-search");
   var allProducts = [];
   var searchProducts = [];
+  var defaultProducts = [];
+  var firstIds = config.firstProducts;
+
+  function setDefaultProducts(){
+    allProducts.forEach(function(product){
+      var idx = firstIds.indexOf(product._id);
+      if (idx > -1){
+        defaultProducts[idx] = product;
+      }
+    });
+  }
 
   $.ajax({
     url: config.apiURL + "/products",
     cache: false
   }).done(function(result){
     allProducts = result;
-    searchProducts = allProducts.slice(0, config.maxProductsShow);
+
+    setDefaultProducts();
+    searchProducts = defaultProducts;
+
     bindProducts();
   });
 
@@ -25,7 +39,7 @@ module.exports = function(){
     var keyword = $.trim(search.val());
 
     if (keyword.length === 0){
-      searchProducts = allProducts.slice(0, config.maxProductsShow);
+      searchProducts = defaultProducts;
     }
     else {
       var regex = new RegExp(getNormal(keyword), 'i');
