@@ -8,5 +8,5 @@ Handlebars.registerHelper('productImage', function(image) {
     return cityagro.settings.productsImgs + image;
   }
   
-  return "/images/no_image.png";
+  return "/images/noimage.png";
 });
