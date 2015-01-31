@@ -1,7 +1,7 @@
 
 module.exports = {
   apiURL: "/api",
-  productsImgs: "http://assets.citagro.com.ar/products/",
+  productsImgs: "http://assets.cityagro.com.ar/products/",
   maxProductsShow: 5,
   firstProducts: [
       "5431709c232b5a1a73e433d1"
