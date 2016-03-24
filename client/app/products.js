@@ -4,7 +4,7 @@ var tmpl = require("./templates/products.hbs.js");
 
 module.exports = function(){
 
-  var config = cityagro.settings;  
+  var config = cityagro.settings;
 
   var container = $("ul.products");
   var search = $("input#search");
@@ -17,7 +17,7 @@ module.exports = function(){
   function setDefaultProducts(){
     allProducts.forEach(function(product){
       var idx = firstIds.indexOf(product._id);
-      if (idx > -1){
+      if (idx > -1 && product[idx]){
         defaultProducts[idx] = product;
       }
     });
@@ -76,6 +76,6 @@ function getNormal(text){
   text = text.replace(/ó/g,"o");
   text = text.replace(/Ú/g,"U");
   text = text.replace(/ú/g,"u");
-  
+
   return text;
 }

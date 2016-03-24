@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" />
 
     <meta name="viewport" content="width=device-width" />
-    
+
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/css/app.css?v={{version}}' />
     <!--<script src="//localhost:35729/livereload.js"></script>-->
@@ -47,18 +47,8 @@
 
       <div class="section section-footer">
         <div class="content">
-          <div>
-            <span>Av. Alicia Moreau de Justo</span>
-            <span>740, Piso 3 Ofic.1, </span>
-            <span>Puerto Madero Dock 5</span>
-          </div>
-          <div>
-            <span>(C1107AAP) Ciudad Autónoma</span>
-            <span>de Buenos Aires, Argentina</span>
-          </div>
           <div class="bar-separator">
-            <span><b>Tel</b> +54 11 5235 3950</span>
-            <span><b>Fax</b> +54 11 5199 0691</span>
+            <span>&copy;CityAgro</span>
             <span>info@cityagro.com.ar</span>
           </div>
         </div>

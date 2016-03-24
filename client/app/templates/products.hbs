@@ -1,7 +1,11 @@
 {{#each items}}
 <li>
   <div class="left">
+    {{#if imageURL}}
     <img src="{{productImage imageURL}}">
+    {{else}}
+    <img src="/images/noimage.png">
+    {{/if}}
   </div>
   <div class="right">
     <h4>{{name}}
