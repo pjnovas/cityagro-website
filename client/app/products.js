@@ -15,11 +15,8 @@ module.exports = function(){
   var firstIds = config.firstProducts;
 
   function setDefaultProducts(){
-    allProducts.forEach(function(product){
-      var idx = firstIds.indexOf(product._id);
-      if (idx > -1 && product[idx]){
-        defaultProducts[idx] = product;
-      }
+    defaultProducts = allProducts.filter(function(p) {
+      return firstIds.indexOf(p._id) > -1;
     });
   }
 
